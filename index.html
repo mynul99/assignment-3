@@ -7,6 +7,8 @@
     <!-- tail wind and daisy ui -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
 <script src="https://cdn.tailwindcss.com"></script>
+<!-- icon -->
+<script src="https://kit.fontawesome.com/4b287357da.js" crossorigin="anonymous"></script>
 <!-- google font manrope -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,7 +23,7 @@
 <body class="manrope">
     <header class="container mx-auto">
         <!-- carousel -->
-        <div class="carousel w-full has-[550px]:">
+        <div class="carousel w-full lg:h-[550px]:">
             <div id="slide1" class="carousel-item relative w-full rounded">
               <img src="Images/1.png" class="w-full" />
               
@@ -32,19 +34,15 @@
             </div> 
             <div id="slide2" class="carousel-item relative w-full rounded">
               <img src="Images/hokey.webp" class="w-full" />
-             <!--<div class="bg-black lg:absolute bottom-10 right-10 text-left p-5 rounded">
-                <h2 class="text-white text-2xl font-extrabold">Meet all the heroes from the field</h2>
-                <p class="text-white">Hokey refers to something that is trite,<br> overly sentimental, or lacking in authenticity, often used to describe clichéd expressions or ideas.</p>
-              </div>-->
               <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
                 <a href="#slide1" class="btn btn-circle bg-black text-white">❮</a> 
                 <a href="#slide1" class="btn btn-circle bg-black text-white">❯</a>
               </div>
             </div> 
-            <div class="bg-black h-60 w-60  text-left p-5 rounded">
+            <!--<div class="bg-black h-60 w-60  text-left p-5 rounded">
                 <h2 class="text-white text-2xl font-extrabold">Meet all the heroes from the field</h2>
                 <p class="text-white">Hokey refers to something that is trite,<br> overly sentimental, or lacking in authenticity, often used to describe clichéd expressions or ideas.</p>
-              </div>
+              </div>-->
           </div>
     </header>
     <main class="container mx-auto">
@@ -84,12 +82,112 @@
                 <h1 class="text-2xl lg:text-4xl font-extrabold mt-6 mb-6 ">Program Sections</h1>
                 <p class="text-sm mb-6  text-gray-500">There are three types program. Junior program ,Teenager program ,Professional player program.</p>
             </div>
-            <div>
-              <div class="bg-center bg-cover w-[320px] h-[244px] lg:w-[573px] lg:h-[338px] bg-[url('Images/2.png')] rounded">
-                
+            <div class="mt-12 lg:flex gap-6 my-5">
+        <div class="bg-center bg-cover w-[320px] h-[244px] lg:w-[800px] lg:h-[338px]  bg-[url('Images/2.png')] rounded lg:space-y-4 pt-5 lg:pt-28 pl-5">
+                <h3 class=" text-2xl lg:text-3xl font-extrabold text-white">Junior Program</h3>
+                <p class="text-white">Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit 
+                    enim sagittis turpis in magna. Id et sed euismod natoque amet nunc morbi nulla. Tortor congue sed et in.</p>
+                    <button class="btn btn-active bg-[#FF4240] text-white border-none">Register Now!</button>
               </div>
-              <div>
-
+        <div class=" bg-center bg-cover w-[320px] h-[244px] lg:w-[800px] lg:h-[338px]  bg-[url('Images/3.png')] rounded lg:space-y-4 pt-5 lg:pt-28 pl-5 mt-5 lg:mt-0">
+                <h3 class=" text-2xl lg:text-3xl font-extrabold text-white">Teenager Program</h3>
+                <p class="text-white">Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit 
+                    enim sagittis turpis in magna. Id et sed euismod natoque amet nunc morbi nulla. Tortor congue sed et in.</p>
+                    <button class="btn btn-active bg-[#FF4240] text-white border-none">Register Now!</button>
+              </div>
+            </div>
+            <div class="sm:mb-5 bg-center bg-cover w-[320px] h-[244px] lg:w-[1538px] lg:h-[450px]  bg-[url('Images/4.png')] rounded lg:space-y-4 pt-5 lg:pt-60 pl-5">
+                <h3 class=" text-2xl lg:text-3xl font-extrabold text-white">Teenager Program</h3>
+                <p class="text-white">Dolor sit amet consectetur. Ut urna diam quis sagittis. <br> Elit elit 
+                    enim sagittis turpis in magna. Id et sed euismod natoque amet nunc morbi nulla. Tortor congue sed et in.</p>
+                    <button class="btn btn-active bg-[#FF4240] text-white border-none">Register Now!</button>
+              </div>
+        </section>
+        <!-- products section -->
+        <section class="my24">
+            <div class="text-center border-dashed border-y-2 divide-black-700">
+                <h1 class="text-2xl lg:text-4xl font-extrabold mt-6 mb-6 ">Our New Products</h1>
+                <p class="text-sm mb-6  text-gray-500"> Good products seamlessly blend functionality with durability, ensuring a reliable and satisfying user experience. <br> Their thoughtful design and attention to detail set them apart, making them essential for those seeking excellence.</p>
+            </div>
+            <!-- product -->
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 mt-6"> 
+                <!-- card 1 -->
+              <div class="flex lg:flex-row flex-col gap-5 p-5 border-2 rounded-xl ">
+                <img src="Images/5.png" alt="">
+                <div>
+                    <i class="fa-solid fa-star text-yellow-400"></i><span class="mr-3">5.0</span>
+                    <i class="fa-regular fa-eye"></i><span class="mr-3">20</span>
+                    <i class="fa-regular fa-heart"></i><span class="mr-3">200</span>
+                    <h3 class="text-2xl font-extrabold mt-3">Hokey fan's jacket</h3>
+                    <p class="mb-7">Good products seamlessly blend <br>functionality with durability,</p>
+                    <span class="mr-3 text-red-500 font-bold">Price - $22.00</span>
+                    <i class="fa-solid fa-cart-shopping"></i>Delivery Fee : Free
+                </div>
+              </div>
+                <!-- card 2 -->
+              <div class="flex lg:flex-row flex-col gap-5 p-5 border-2 rounded-xl ">
+                <img src="Images/6.png" alt="">
+                <div>
+                    <i class="fa-solid fa-star text-yellow-400"></i><span class="mr-3">5.0</span>
+                    <i class="fa-regular fa-eye"></i><span class="mr-3">20</span>
+                    <i class="fa-regular fa-heart"></i><span class="mr-3">200</span>
+                    <h3 class="text-2xl font-extrabold mt-3">Hokey fan's jacket</h3>
+                    <p class="mb-7">Good products seamlessly blend <br>functionality with durability,</p>
+                    <span class="mr-3 text-red-500 font-bold">Price - $22.00</span>
+                    <i class="fa-solid fa-cart-shopping"></i>Delivery Fee : Free
+                </div>
+              </div>
+                <!-- card 3 -->
+              <div class="flex lg:flex-row flex-col gap-5 p-5 border-2 rounded-xl ">
+                <img src="Images/7.png" alt="">
+                <div>
+                    <i class="fa-solid fa-star text-yellow-400"></i><span class="mr-3">5.0</span>
+                    <i class="fa-regular fa-eye"></i><span class="mr-3">20</span>
+                    <i class="fa-regular fa-heart"></i><span class="mr-3">200</span>
+                    <h3 class="text-2xl font-extrabold mt-3">Hokey fan's jacket</h3>
+                    <p class="mb-7">Good products seamlessly blend <br>functionality with durability,</p>
+                    <span class="mr-3 text-red-500 font-bold">Price - $22.00</span>
+                    <i class="fa-solid fa-cart-shopping"></i>Delivery Fee : Free
+                </div>
+              </div>
+                <!-- card 4 -->
+              <div class="flex lg:flex-row flex-col gap-5 p-5 border-2 rounded-xl ">
+                <img src="Images/8.png" alt="">
+                <div>
+                    <i class="fa-solid fa-star text-yellow-400"></i><span class="mr-3">5.0</span>
+                    <i class="fa-regular fa-eye"></i><span class="mr-3">20</span>
+                    <i class="fa-regular fa-heart"></i><span class="mr-3">200</span>
+                    <h3 class="text-2xl font-extrabold mt-3">Hokey fan's jacket</h3>
+                    <p class="mb-7">Good products seamlessly blend <br>functionality with durability,</p>
+                    <span class="mr-3 text-red-500 font-bold">Price - $22.00</span>
+                    <i class="fa-solid fa-cart-shopping"></i>Delivery Fee : Free
+                </div>
+              </div>
+                <!-- card 5 -->
+              <div class="flex lg:flex-row flex-col gap-5 p-5 border-2 rounded-xl">
+                <img src="Images/9.png" alt="">
+                <div>
+                    <i class="fa-solid fa-star text-yellow-400"></i><span class="mr-3">5.0</span>
+                    <i class="fa-regular fa-eye"></i><span class="mr-3">20</span>
+                    <i class="fa-regular fa-heart"></i><span class="mr-3">200</span>
+                    <h3 class="text-2xl font-extrabold mt-3">Hokey fan's jacket</h3>
+                    <p class="mb-7">Good products seamlessly blend <br>functionality with durability,</p>
+                    <span class="mr-3 text-red-500 font-bold">Price - $22.00</span>
+                    <i class="fa-solid fa-cart-shopping"></i>Delivery Fee : Free
+                </div>
+              </div>
+                <!-- card 6 -->
+              <div class="flex lg:flex-row flex-col gap-5 p-5 border-2 rounded-xl ">
+                <img src="Images/10.png" alt="">
+                <div>
+                    <i class="fa-solid fa-star text-yellow-400"></i><span class="mr-3">5.0</span>
+                    <i class="fa-regular fa-eye"></i><span class="mr-3">20</span>
+                    <i class="fa-regular fa-heart"></i><span class="mr-3">200</span>
+                    <h3 class="text-2xl font-extrabold mt-3">Hokey fan's jacket</h3>
+                    <p class="mb-7">Good products seamlessly blend <br>functionality with durability,</p>
+                    <span class="mr-3 text-red-500 font-bold">Price - $22.00</span>
+                    <i class="fa-solid fa-cart-shopping"></i>Delivery Fee : Free
+                </div>
               </div>
             </div>
         </section>
