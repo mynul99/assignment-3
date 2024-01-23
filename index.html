@@ -22,8 +22,39 @@
 
 <body class="manrope">
     <header class="container mx-auto">
+      <nav>
+        <div class="navbar bg-base-100">
+          <div class="navbar-start">
+            <div class="dropdown">
+              <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+              </div>
+              <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                <li ><a class="text-xl font-bold text-[#FF4240]">Home</a></li>
+                <li><a class="text-xl font-bold">About </a></li>
+                <li><a class="text-xl font-bold"> Pages</a></li>
+                <li><a class="text-xl font-bold">Blog </a></li>
+                <li><a class="text-xl font-bold"> Contact</a></li>
+              </ul>
+            </div>
+            <a class=" font-black text-2xl lg:text-4xl">Hockey<span class="text-4xl font-black text-[#FF4240]">’</span>s</a>
+          </div>
+          <div class="navbar-center hidden lg:flex">
+            <ul class="menu menu-horizontal px-1">
+              <li ><a class="text-xl font-bold text-[#FF4240]">Home</a></li>
+              <li><a class="text-xl font-bold">About </a></li>
+              <li><a class="text-xl font-bold"> Pages</a></li>
+              <li><a class="text-xl font-bold">Blog </a></li>
+              <li><a class="text-xl font-bold"> Contact</a></li>
+            </ul>
+          </div>
+          <div class="navbar-end">
+            <i class="fa-solid fa-magnifying-glass mr-3 hidden lg:block "></i> <a class="btn bg-[#FF4240] text-white">Get Ticket</a>
+          </div>
+        </div> 
+      </nav>
         <!-- carousel -->
-        <div class="carousel w-full lg:h-[550px]:">
+        <div class="carousel w-full lg:h-[550px]: mt-10">
             <div id="slide1" class="carousel-item relative w-full rounded">
               <img src="Images/1.png" class="w-full" />
               
@@ -266,20 +297,35 @@
         </section>
     </main>
     <footer>
-        <footer class="grid  grid-col lg:grid-cols-4 p-10  bg-black text-blue-50">
-             <div>
-                <h2>Get In Touch</h2>
-             </div>
-             <div>
-                <h1>jgfjdiofgjoijgiodfjg</h1>
-             </div>
-             <div>
-                <h1>ghusidohgiouaduhguid</h1>
-             </div>
-             <div>
-            <h1>jgiodfjoifdjfoigdffoigjfdogjfoidghuj</h1>
-             </div>
-          </footer>
+      <footer class="footer p-10 bg-black text-white ">
+        <aside class="space-y-3">
+           <h2 class="text-3xl">Get In Touch</h2>
+          <p>Hokey refers to something that is <br> trite, overly sentimental, or lacking <br> in authenticity, often used to describe <br> clichéd expressions or ideas.</p>
+          <div> <i class="fa-regular fa-envelope text-red-500 mr-3"></i>hockeys@support.com</div>
+          <div><i class="fa-solid fa-phone text-red-500 mr-3"></i>(+62) 123-321-543</div>
+          
+        </aside> 
+        <nav class="space-y-3">
+          <header class="footer-title text-white text-bold">Company</header> 
+          <a class="link link-hover">Our team</a>
+          <a class="link link-hover">Design</a>
+          <a class="link link-hover">Marketing</a>
+          <a class="link link-hover">Advertisement</a>
+        </nav> 
+        <nav class="space-y-3">
+          <header class="footer-title text-white text-bold">support</header> 
+          <a class="link link-hover">About us</a>
+          <a class="link link-hover">Contact</a>
+          <a class="link link-hover">Jobs</a>
+          <a class="link link-hover">Press kit</a>
+        </nav> 
+        <nav class="space-y-3">
+          <header class="footer-title">services</header> 
+          <a class="link link-hover">Terms of use</a>
+          <a class="link link-hover">Privacy policy</a>
+          <a class="link link-hover">Cookie policy</a>
+        </nav>
+      </footer>
 
     </footer>
 </body>
